@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drag & Drop 3-Column Layout</title>
+  <link href="./output.css" rel="stylesheet">
+  <script src="./script.js" defer></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+  <h1 class="text-2xl font-bold mb-6 text-center">3-Column Drag & Drop Board</h1>
+
+  
+
+  <div class="grid grid-cols-1  sm:grid-cols-1   md:grid-cols-3 gap-6">
+    
+    <div class="bg-white rounded-xl p-4 shadow min-h-[400px]" id="column-1" ondragover="allowDrop(event)" ondrop="drop(event)">
+      <h2 class="font-semibold mb-4 text-center">To Do</h2>
+      <div class="space-y-4">
+        <div class="bg-red-100 p-3 rounded shadow cursor-move" draggable="true" id="item-1" ondragstart="drag(event)">Task 1</div>
+        <div class="bg-red-100 p-3 rounded shadow cursor-move" draggable="true" id="item-2" ondragstart="drag(event)">Task 2</div>
+         <div class="bg-red-100 p-3 rounded shadow cursor-move" draggable="true" id="item-3" ondragstart="drag(event)">Task 3</div>
+      </div>
+    </div>
+
+   
+    <div class="bg-white rounded-xl p-4 shadow min-h-[400px]" id="column-2" ondragover="allowDrop(event)" ondrop="drop(event)">
+      <h2 class="font-semibold mb-4 text-center">In Progress</h2>
+      <div class="space-y-4"></div>
+    </div>
+
+    
+    <div class="bg-white rounded-xl p-4 shadow min-h-[400px]" id="column-3" ondragover="allowDrop(event)" ondrop="drop(event)">
+      <h2 class="font-semibold mb-4 text-center">Done</h2>
+      <div class="space-y-4"></div>
+    </div>
+  </div>
+</body>
+</html> 
