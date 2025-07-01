@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>To-Do Drag & Drop App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="script.js" defer></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-8">
+  <h1 class="text-3xl font-bold mb-6 text-center">To-Do Board</h1>
+
+  <div class="mb-6 flex justify-center gap-4">
+    <input type="text" id="task-input" class="border p-2 rounded" placeholder="Enter a new task">
+    <button id="add-btn" class="ml-2 px-4 py-2 bg-blue-500 text-white rounded">Add</button>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+    <div class="bg-white rounded-xl p-4 shadow min-h-[400px] task-drop" data-column="todo">
+      <h2 class="font-semibold mb-4 text-center">To Do</h2>
+      <div id="todo" class="space-y-4 task-container"></div>
+    </div>
+
+    <div class="bg-white rounded-xl p-4 shadow min-h-[400px] task-drop" data-column="inprogress">
+      <h2 class="font-semibold mb-4 text-center">In Progress</h2>
+      <div id="inprogress" class="space-y-4 task-container"></div>
+    </div>
+
+    <div class="bg-white rounded-xl p-4 shadow min-h-[400px] task-drop" data-column="done">
+      <h2 class="font-semibold mb-4 text-center">Done</h2>
+      <div id="done" class="space-y-4 task-container"></div>
+    </div>
+  </div>
+</body>
+</html>
+

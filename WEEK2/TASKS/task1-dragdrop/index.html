@@ -1,39 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Drag & Drop 3-Column Layout</title>
-  <link href="./output.css" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drag & Drop Game</title>
+  <link href="./output.css" rel="stylesheet" />
   <script src="./script.js" defer></script>
 </head>
-<body class="bg-gray-100 min-h-screen p-8">
-  <h1 class="text-2xl font-bold mb-6 text-center">3-Column Drag & Drop Board</h1>
+  <body class="bg-gradient-to-br from-indigo-900 to-purple-700 min-h-screen p-8 text-white">
 
-  
+  <h1 class="text-2xl font-bold mb-6 text-center font-mono">Eco Sorting Game</h1>
 
-  <div class="grid grid-cols-1  sm:grid-cols-1   md:grid-cols-3 gap-6">
-    
-    <div class="bg-white rounded-xl p-4 shadow min-h-[400px]" id="column-1" ondragover="allowDrop(event)" ondrop="drop(event)">
-      <h2 class="font-semibold mb-4 text-center">To Do</h2>
+  <div class="flex justify-center mb-6">
+    <button id="reset-btn" class="bg-gray-900 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded font-mono">
+      Reset Game
+    </button>
+  </div>
+
+  <div class="grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 gap-6">
+    <div class="bg-white text-black rounded-xl p-4 shadow min-h-[400px]" id="column-1">
+      <h2 class="font-semibold mb-4 text-center font-mono">Mixed Bin</h2>
       <div class="space-y-4">
-        <div class="bg-red-100 p-3 rounded shadow cursor-move" draggable="true" id="item-1" ondragstart="drag(event)">Task 1</div>
-        <div class="bg-red-100 p-3 rounded shadow cursor-move" draggable="true" id="item-2" ondragstart="drag(event)">Task 2</div>
-         <div class="bg-red-100 p-3 rounded shadow cursor-move" draggable="true" id="item-3" ondragstart="drag(event)">Task 3</div>
-      </div>
+      <div class="bg-red-100 p-3 rounded shadow cursor-move font-mono" draggable="true" id="item-1">Bottles</div>
+      <div class="bg-red-100 p-3 rounded shadow cursor-move font-mono" draggable="true" id="item-2">Plastics</div>
+      <div class="bg-red-100 p-3 rounded shadow cursor-move font-mono" draggable="true" id="item-3">Cans</div>
+      <div class="bg-red-100 p-3 rounded shadow cursor-move font-mono" draggable="true" id="item-4">Banana Peel</div>
+      <div class="bg-red-100 p-3 rounded shadow cursor-move font-mono" draggable="true" id="item-5">Paper Bag</div>
+</div>
+
     </div>
 
-   
-    <div class="bg-white rounded-xl p-4 shadow min-h-[400px]" id="column-2" ondragover="allowDrop(event)" ondrop="drop(event)">
-      <h2 class="font-semibold mb-4 text-center">In Progress</h2>
+    <div class="bg-white text-black rounded-xl p-4 shadow min-h-[400px]" id="column-2">
+      <h2 class="font-semibold mb-4 text-center font-mono">Recyclables</h2>
       <div class="space-y-4"></div>
     </div>
 
-    
-    <div class="bg-white rounded-xl p-4 shadow min-h-[400px]" id="column-3" ondragover="allowDrop(event)" ondrop="drop(event)">
-      <h2 class="font-semibold mb-4 text-center">Done</h2>
+    <div class="bg-white  text-black rounded-xl p-4 shadow min-h-[400px]" id="column-3">
+      <h2 class="font-semibold mb-4 text-center font-mono">Eco Bin</h2>
       <div class="space-y-4"></div>
     </div>
   </div>
 </body>
-</html> 
+</html>
