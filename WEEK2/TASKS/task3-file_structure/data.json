@@ -1,21 +1,23 @@
-{
-  "name": "root",
-  "type": "folder",
-  "children": [
-    { "name": "file1.txt", "type": "file" },
     {
-      "name": "folderA",
+      "name": "root",
       "type": "folder",
       "children": [
-        { "name": "file2.txt", "type": "file" },
         {
-          "name": "folderB",
+          "name": "documents",
           "type": "folder",
           "children": [
-            { "name": "file3.txt", "type": "file" }
+            { "name": "report.pdf", "type": "file" },
+            { "name": "notes.txt", "type": "file" }
           ]
-        }
+        },
+        {
+          "name": "images",
+          "type": "folder",
+          "children": [
+            { "name": "photo1.jpg", "type": "file" },
+            { "name": "vacation", "type": "folder", "children": [] }
+          ]
+        },
+        { "name": "index.html", "type": "file" }
       ]
     }
-  ]
-}
