@@ -24,3 +24,5 @@ WEEK4
     - card_listing_app (Vite + React)
     - Countdown-app (Vite + React)
     - form-validation (Vite + React)
+  - Assignment
+    - movie-app (Vite + React + CSS)
