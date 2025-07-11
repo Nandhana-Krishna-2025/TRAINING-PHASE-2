@@ -24,5 +24,12 @@ WEEK4
     - card_listing_app (Vite + React)
     - Countdown-app (Vite + React)
     - form-validation (Vite + React)
+
   - Assignment
     - movie-app (Vite + React + CSS)
+    - Functionalities
+        - Search movies by name
+        - Like movies to add them to Favorites
+        - Remove movies from Favorites
+        - Click logo to go back to Home
+        - Navigate between Home and Favorites pages
