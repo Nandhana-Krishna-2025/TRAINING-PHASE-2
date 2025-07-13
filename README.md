@@ -11,7 +11,7 @@ WEEK2
   - TASKS
     - task1dragdrop (Tailwind CLI)
     - task2-to-do-application (Tailwind CDN)
-    - task3-file_structure (Tailwind CDN)
+    - task3-file_structure 
 
 WEEK3
   - Assignment
